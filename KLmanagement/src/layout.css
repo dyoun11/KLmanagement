@@ -1,0 +1,85 @@
+a:link,a:visited{
+	color: white;
+}
+a:hover{
+	color: gray;
+}
+#bg-black{
+	background-color: black;
+	background-color: rgba( 0, 0, 0, 0.5 );
+}
+#nav{
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 3;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 80vh;
+	background: linear-gradient( to bottom, transparent, black);
+}
+div, ul, li{
+	margin: 0;
+	padding: 0;
+}
+.mainViews{
+	width: 100vw;
+	height: 95vh;
+
+	overflow: hidden;
+}
+.mainViews:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.mainViews li {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 95vh;
+  opacity:0;
+  z-index: -3;
+}
+.mainViews li div {
+  width: 100vw;
+  height: 95vh;
+  background-size:cover;
+  position:relative;
+}
+.mainViews li dl {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:20px;
+}
+.mainViews li .right {
+  left:auto;
+  right:20px;
+  text-align:right;
+}
+.mainViews li dt {
+  color:#fff;
+  font-size:3rem;
+  text-shadow:1px 1px 10px #444;
+}
+.mainViews li dd {
+  color:#fff;
+  text-shadow:1px 1px 10px #444;
+}
+.btn {
+  text-align:center;
+}
+.btn button {
+  margin-top:10px;
+  border:1px solid #ccc;
+  background-color:#fff;
+  color:#666;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
